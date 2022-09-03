@@ -1,413 +1,871 @@
-<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- END CONTENT ZONE -->
+<link rel="stylesheet" href="folder-css/css.css">
 
-<html>
-  <head>
-    <title>Swartstools Pro-cuts cutting discs</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<div id="wrapper_bg">
+    <div id="pagebg">
 
-    <link rel="stylesheet" href="https://www.swartstools.com.au/assets/e1/w3.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet" />
-    <style>
-      .header {
-        background-image: url("https://www.swartstools.com.au/assets/e1/trianglered.png");
-
-        background-repeat: no-repeat;
-        background-size: 7vh;
-        padding: 10px;
-      }
-
-      #greyDIV {
-        width: 100%;
-        border-bottom: 15px solid #292929;
-      }
-      .grey-bg {
-        background-color: #292929;
-      }
-      .red-bg {
-        background-color: #e11838;
-      }
-      .w3-swarts,
-      .w3-hover-red:hover {
-        color: #fff !important;
-        background-color: #e11838 !important;
-      }
-
-      .tittle-head:after {
-        content: "";
-        border-top: 0.3rem solid #e11838;
-        margin: 0 0 0 20px;
-        flex: 1 0 20px;
-      }
-      .tittle-head {
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        color: #e11838;
-        direction: ltr;
-        font-family: "Montserrat";
-        font-size: 140%;
-        font-weight: 800;
-        font-style: italic;
-        letter-spacing: normal;
+<style>
+#header{
+    background: #000000;
+}
+.pointer {
+    cursor: pointer !important;
+}
+.header_outer {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-image: url(https://www.datastreamserver.com/_ed/images/ed_header_background.jpg);
+    background-repeat: repeat-x;
+}
+#header_top, #header_content {
+    width: 1000px;
+    margin: 0 auto;
+}
+#header_top img {
+    padding: 9px 0px;
+    width: 996px;
+}
+#header_content {
+    padding: 20px 0;
+}
+#header_content .inner-container {
+    display: flex;
+}
+#logo, #showroom_display, #customer_service {
+    flex: 1;
+}
+#logo img {
+    width: 330px;
+    padding-top: 23px;
+}
+#customer_service img {
+    float: right;
+}
+#wrapper_bg{
+    background-image:none !important;
+}
+.divCellmain2_postig_top{
+   border:none !important;
+}
+@media (max-width: 640px){
+    #hero-banner{
+         margin-top:1px;
+    }
+    #main_wrapper{
+         padding-top:0px;
+    }
+    #header .header_outer {
+        background-color: #000000;
+        margin-top: 0px;
+        margin-bottom:0px !important;
+    }
+    .header_outer {
+        background-image: url(https://www.datastreamserver.com/_ed/images/ed_header_mobile_background.jpg);
+    }
+    #header_top {
+        width: auto;
+    }
+    #header_top img {
+        display: none;
+    }
+    #header_content {
+        width: auto;
+        padding: 25px 0;
+    }
+    #header_content .inner-container {
+        display: block;
+    }
+    .inner-container #logo {
         text-align: center;
-        padding-top: 20px;
-        padding-bottom: 5px;
-      }
-      .img {
-        max-width: 100%;
-      }
-      .abn {
-        color: #ffffff;
-        font-family: "Montserrat";
-        font-weight: 100;
-      }
+    }
+    .inner-container #logo img {
+        font-size: 220px;
+        width: 245px;
+        padding-top: 0;
+    }
+    #showroom_display, #customer_service {
+        display: none;
+    }
+}
 
-      .sub-tittle-head {
-        color: #e11838;
-        direction: ltr;
-        font-family: "Roboto", sans-serif;
-        font-size: 120%;
-        font-weight: 500;
-        letter-spacing: normal;
-        text-align: left;
-        padding-top: 20px;
-      }
-      .point-head {
-        padding-top: 20px;
-        color: #ffffff;
-        direction: ltr;
-        font-family: "Roboto", sans-serif;
-        font-size: 110%;
-        font-weight: 500;
-        letter-spacing: normal;
-        line-height: 120%;
-        text-align: left;
-      }
-      .point-body {
-        padding-top: 5px;
-        color: #ffffff;
-        direction: ltr;
-        font-family: "Roboto", sans-serif;
-        letter-spacing: normal;
-        line-height: 120%;
-        text-align: left;
-      }
-
-      body {
-        background-color: #fff;
-        color: #000;
-        font-family: "Roboto", sans-serif;
-        color: #000;
-        direction: ltr;
-        font-weight: 400;
-        line-height: 150%;
-      }
-      @media screen and (min-width: 601px) {
-        body {
-          font-size: 25px;
-        }
-      }
-
-      /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-      @media screen and (max-width: 600px) {
-        body {
-          font-size: 18px;
-        }
-      }
-
-      @media screen and (min-width: 601px) {
-        .logo-head {
-          width: 468px;
-          height: auto;
-        }
-      }
-
-      .sl-point {
-        color: #ffffff;
-        direction: ltr;
-        font-family: "Roboto", sans-serif;
-        font-weight: 600;
-        text-align: left;
-        background-color: #e11838;
-      }
-
-      .point-row {
-        padding-bottom: 10px;
-      }
-
-      .centring {
-        float: left;
-        right: -50%;
-        text-align: center;
-      }
-
-      .responsive-image {
-        width: 100%;
-        max-width: 1920px;
-        height: auto;
-      }
-
-      .para-policy {
-        text-align: justify;
-        text-justify: inter-word;
-        padding-right: 20px;
-        padding-left: 20px;
-        color: #fff;
-      }
-      .sss {
-        background-image: url("https://www.swartstools.com.au/assets/e1/cd/bg.jpg");
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="w3-content" style="max-width: 1440px">
-      <!--HEADER-->
-      <div class="w3-row-padding header">
-        <div class="w3-half centring">
-          <img class="responsive-image" alt="swartstools australia" src="https://www.swartstools.com.au/assets/e1/lg-swarts.svg" style="width: 300px; max-width: 350px" />
+</style>
+<div id="header">
+    <div class="header_outer">
+        <div id="header_top">
+            <img src="https://www.datastreamserver.com/_ed/images/ed_header_top.png">
         </div>
-        <div class="w3-half centring">
-          <img class="responsive-image" alt="warranty and australia owned" src="https://www.swartstools.com.au/assets/e1/logoright.png" style="max-width: 280px" />
+        <div id="header_content">
+            <div class="inner-container">
+                <div id="logo">
+                    <img src="https://img.era.id/cwsC1D4nHV8UcAYeY8UZN4BgklRtW_-TCHY6P8kRJ9k/rs:fill:1280:720/g:sm/bG9jYWw6Ly8vcHVibGlzaGVycy8zMzUxNy8yMDIwMDcyNDEzMzMtbWFpbi5jcm9wcGVkXzE1OTU1NzM5ODEuanBn.jpg">
+                </div>
+                
+                <div id="customer_service">
+                        <a class="pointer" href="https://contact.ebay.com.au/ws/eBayISAPI.dll?FindAnswers&amp;redirect=0&amp;iid=140744556841&amp;requested=edisons" target="_blank">
+                            <img src="https://www.datastreamserver.com/_ed/images/promoAds/ad_ebay_normal.png">
+                        </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <!--HEADER-->
-
-      <div id="greyDIV"></div>
-
-      <!--SALE POINT-->
-      <div class="w3-row-padding sl-point">
-        <div class="w3-third">
-          <table class="w3-table">
-            <tr>
-              <th style="width: 20%">
-                <img alt="same day dispatch before midday" src="https://www.swartstools.com.au/assets/e1/i-box.svg" style="width: 56px" />
-              </th>
-              <th style="line-height: 1.1; width: 80%">SAME DAY DISPATCH BEFORE MIDDAY</th>
-            </tr>
-          </table>
-        </div>
-        <div class="w3-third">
-          <table class="w3-table">
-            <tr>
-              <th style="width: 20%">
-                <img alt="free shipping" src="https://www.swartstools.com.au/assets/e1/i-pack.svg" style="width: 56px" />
-              </th>
-              <th style="line-height: 1.1; width: 80%">FREE SHIPPING</th>
-            </tr>
-          </table>
-        </div>
-        <div class="w3-third">
-          <table class="w3-table">
-            <tr>
-              <th style="width: 20%">
-                <img alt="checkout our amazing feedback" src="https://www.swartstools.com.au/assets/e1/i-like.svg" style="width: 56px" />
-              </th>
-              <th style="line-height: 1.1; width: 80%">CHECKOUT OUR AMAZING FEEDBACK</th>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <!--SALE POINT-->
-
-      <!--MAIN IMAGE-->
-      <div class="main-image">
-        <img class="responsive-image" alt="Swarts Tools cutting discs" src="https://www.swartstools.com.au/assets/e1/cd/mainimagee.jpg" />
-      </div>
-      <!--MAIN IMAGE-->
-
-
-
-      <!--PRODUCT INFORMATION-->
-      <div class="w3-container">
-        <div class="w3-row-padding">
-          <div class="tittle-head">
-            <span class="tinyMce-placeholder">INFORMATION </span>
-          </div>
-        </div>
-      </div>
-      <div class="w3-container grey-bg">
-        <div class="w3-row-padding">
-          <div class="sub-tittle-head">SPECS</div>
-          <div class="w3-responsive">
-            <table class="w3-table w3-black w3-bordered w3-border w3-centered">
-              <thead>
-                <tr>
-                  <th class="w3-swarts">Part no.</th>
-                  <th class="w3-swarts">Size</th>
-                  <th class="w3-swarts">Bore size</th>
-                  <th class="w3-swarts">Max speed</th>
-                  <th class="w3-swarts">Thickness</th>
-                </tr>
-              </thead>
-              <tr>
-                <td>SW2065</td>
-                <td>100mm (4")</td>
-                <td>16mm (5/8")</td>
-                <td>15,200 RPM</td>
-                <td>1mm (3/64"</td>
-              </tr>
-              <tr>
-                <td>SW2067</td>
-                <td>115mm (4.5")</td>
-                <td>22.23mm (7/8")</td>
-                <td>13,300 RPM</td>
-                <td>1mm (3/64")</td>
-              </tr>
-              <tr>
-                <td>SW2070</td>
-                <td>125mm (5")</td>
-                <td>22.23mm (7/8")</td>
-                <td>12,200 RPM</td>
-                <td>1mm (3/64"</td>
-              </tr>
-              <tr>
-                <td>SW2071</td>
-                <td>125mm (5")</td>
-                <td>22.23mm (7/8")</td>
-                <td>12,200 RPM</td>
-                <td>1.6mm (1/16")</td>
-              </tr>
-              <tr>
-                <td>SW2072</td>
-                <td>125mm (5")</td>
-                <td>22.23mm (7/8")</td>
-                <td>12,200 RPM</td>
-                <td>2.5mm (3/32")</td>
-              </tr>
-              <tr>
-                <td>SW2073</td>
-                <td>180mm (7")</td>
-                <td>22.23mm (7/8")</td>
-                <td>8,600 RPM</td>
-                <td>1.6mm (1/16")</td>
-              </tr>
-              <tr>
-                <td>SW2075</td>
-                <td>230mm (9")</td>
-                <td>22.23mm (7/8")</td>
-                <td>6,600 RPM</td>
-                <td>1.9mm (1/13")</td>
-              </tr>
-            </table>
-          </div>
-
-          <div class="w3-row-padding">
-            <div class="sub-tittle-head">FEATURES</div>
-            <span class="tinyMce-placeholder" style="color: #fff">
-              <ul class="w3-ul">
-                <li class="w3-hover-red">• Suitable for use on all metals</li>
-                <li class="w3-hover-red">• Ultra long lasting</li>
-                <li class="w3-hover-red">• Extremely stable to minimize risk of breakage</li>
-                <li class="w3-hover-red">• Low vibration</li>
-                <li class="w3-hover-red">• Fast cutting</li>
-              </ul>
-            </span>
-          </div>
-        </div>
-      </div>
-      <!--PRODUCT INFORMATION-->
-      <!--PRODUCT FEATURE 4-->
-      <img class="responsive-image" alt="EN MPA safety standard approved" src="https://www.swartstools.com.au/assets/e1/cd/safety.jpg" />
-      <!--PRODUCT FEATURE 4-->
-
-      <!--PRODUCT FEATURE 1-->
-      <img class="responsive-image" alt="superior performance - ultra long lasting fasting cutting" src="https://www.swartstools.com.au/assets/e1/cd/longlast.jpg" />
-      <!--PRODUCT FEATURE 1-->
-
-      <!--PRODUCT FEATURE 2-->
-      <img class="responsive-image" alt="extremely stable cut low vibration" src="https://www.swartstools.com.au/assets/e1/cd/stables.jpg" />
-      <!--PRODUCT FEATURE 2-->
-
-      <!--PRODUCT FEATURE 3-->
-      <img class="responsive-image" alt="suitable for use on all metals" src="https://www.swartstools.com.au/assets/e1/cd/all-metals.jpg" />
-      <!--PRODUCT FEATURE 3-->
-
-      <!--ABOUT SWARTSTOOLS-->
-      <div class="w3-container">
-        <div class="w3-row-padding">
-          <div class="tittle-head">
-            <span class="tinyMce-placeholder">ABOUT SWARTS TOOLS</span>
-          </div>
-          <img class="responsive-image" alt="swartstool australia" src="https://www.swartstools.com.au/assets/e1/swarts.jpg" style="float: left; padding-right: 20px; padding-top: 20px; max-width: 500px" />
-          <div class="dd" style="text-align: justify; text-justify: inter-word">
-            <p>Swarts Tools is a proudly Australian owned and run industrial supply brand boasting an ever-growing range of abrasives, power tools and accessories.</p>
-            <p>After its conception in 2011, Swarts Tools has rapidly grown into a well-known and respected brand which is pegged to become one of Australia’s leading industrial brands.</p>
-            <p>
-              We pride ourselves on our strict quality control procedures performed on every product at our headquarters in Sydney, Australia. It is because of these strict quality control measures that we have been able to build up a
-              strong brand identity for reliability.
-            </p>
-            <p>
-              Swarts began solely with a woodworking product base which was quickly and keenly accepted into the market. In 2014, we launched our metal working abrasive range aimed toward professional users which have taken the market by
-              storm. We have swiftly become a market leader and boast not only one of the best quality levels but we also offer the best value in pricing.
-            </p>
-            <p>
-              Swarts has received an incredible response from the market with every new range released. Our product range has grown over 50% per year to keep up with customer demand for reliable and affordable products. When developing and
-              launching new ranges, we pay high attention to detail and consult with industry professionals as well as our end users to ensure we offer well-priced products that are of excellent quality, fitted with desirable
-            </p>
-            <p>
-              We offer a 36-month Professional Warranty across our entire range as well as expert product and after sale support. You can purchase from Swarts Tools knowing full well that we are available for whatever help you may need.
-            </p>
-            <p>We are happy to answer any enquiries you may have about our great brand and tools via our eBay contact link.</p>
-          </div>
-        </div>
-      </div>
-      <!--ABOUT SWARTSTOOLS-->
-
-      <!--STORE POLICIES-->
-      <div class="w3-container">
-        <div class="w3-row-padding">
-          <div class="tittle-head">
-            <span class="tinyMce-placeholder">STORE POLICIES</span>
-          </div>
-        </div>
-      </div>
-      <div class="w3-row-padding grey-bg">
-        <div class="sub-tittle-head" style="padding-left: 20px">DELIVERY</div>
-        <div class="para-policy">
-          <p>We don't believe in extra charges so we offer free shipping! All orders are shipped on the same business day if payment is received by midday AEST (excluding public holidays).</p>
-          • We use registered Australia Post for this item.<br />
-          • Pick-up is available on request.<br />
-          • A tracking number will be provided to you after dispatch.<br />
-          • We automatically request that Australia Post receive a signature on delivery unless you inform us otherwise.<br />
-          • Please leave us a note on checkout if you would like the goods to be left in a safe place of your choosing, should you not be home to the receive the goods.<br /><br />
-        </div>
-      </div>
-
-      <div class="w3-row-padding red-bg">
-        <div class="sub-tittle-head" style="color: #fff; padding-left: 20px">WARRANTY</div>
-        <div class="para-policy">
-          <img alt="swartstools warranty" src="https://www.swartstools.com.au/assets/e1/warrant.png" style="max-width: 150px; float: left; padding-right: 20px" />
-          <p>
-            The product is warranted to be free from defects in materials and workmanship, under normal use and service for a period of 36 months from the date of sale. This warranty covers defective parts and workmanship, provided that the
-            product is shipped pre-paid to the seller within 36 months of purchase of goods. This warranty is limited to the repair or replacement (at the manufacturers' discretion) of parts and shipping prepaid to the original dispatch
-            destination. We regret that no liability can be accepted for consequential or special damages of any kind whatsoever arising in connection with products supplied by the seller. This warranty is in lieu of all other warranties
-            expressed or implied. No representative is authorised to assume for the seller any other liability in connection with the seller's products. month warranty and 24 hour turnaround on any claims.
-          </p>
-        </div>
-      </div>
-
-      <!--STORE POLICIES-->
-
-      <!--FOOTER-->
-      <section class="header">
-        <div class="w3-row">
-          <div class="w3-col m4 l4 w3-cell-middle centring">
-            <img class="" alt="swartstools australia" src="https://www.swartstools.com.au/assets/e1/lg-swarts.svg" style="width: 280px" />
-          </div>
-          <div class="w3-col m4 l8">
-            <div class="w3-panel w3-swarts abn" style="text-align: center">ABN:55619 775 601</div>
-          </div>
-        </div>
-      </section>
-      <!--FOOTER-->
     </div>
-  </body>
-</html>
+</div>
+<div id="postage_free_top">
+     <div id="free_top">
+           <img src="https://www.datastreamserver.com/_ed/images/free-ship.png"></a>
+     </div>
+</div>
+
+<div id="post_top_mobile">
+    <div id="post_top_mobile_top">
+        <a class="pointer" href="#" target="_blank"></a>
+                <a class="pointer" href="https://contact.ebay.com.au/ws/eBayISAPI.dll?FindAnswers&amp;redirect=0&amp;iid=140744556841&amp;requested=edisons" target="_blank">
+                    <img src="https://www.datastreamserver.com/_ed/images/promoAds/mobile/ad_ebay_normal.png">
+                </a>
+    </div>
+    <div id="post_top_mobile_bottom">
+        <img src="https://www.datastreamserver.com/_ed/images/free-ship-mobile.png"></a>
+    </div>
+</div>
+
+<style>
+#main_wrapper{
+    padding-top:0;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+#header {
+  background-color: #F1F1F1;
+}
+
+#free_top{
+    padding: 5px 0;
+    margin: auto;
+    width: 865px;
+}
+
+#postage_free_top{
+   background-image:none;
+   background-color: #01aeda;
+   height:inherit;
+   text-align:center;
+}
+
+@media (max-width:640px) {
+    div#pagebg {
+       background: url(https://www.datastreamserver.com/_ed/images/ed_header_mobile_background.jpg) repeat-x;
+    }
+
+   #header_content{
+      padding: 25px 0 5px 0 !important; 
+   }
+    #hero-banner{
+        margin-top:1px;
+    }
+    #post_top_mobile{
+        display:block;
+    }
+    #post_top_mobile_top {
+        /*background: #000000;*/
+        padding: 0px 5px 12px 5px;
+    }
+    #header {
+        background-color: transparent;
+    }
+    #pagebg .header_outer {
+    background-color: #F2F2F2;
+    margin-top: 0px;
+    margin-bottom: -5px;
+    }
+    #post_top_mobile {
+        background-color: transparent !important;
+        height: auto !important;
+    }
+    #post_top_mobile_bottom {
+        display:block;
+        position: relative;
+    }
+    #post_top_mobile_bottom img {
+        width:100%;
+    }
+}
+@media (max-width: 375px) {
+
+}
+@media (max-width: 360px) {
+
+}
+@media (max-width: 320px) {
+
+}
+</style>
+
+<div id="main_wrapper">
+
+<div id="postage_free_top">
+</div>
+
+<!-- DISPLAY SHOWROOM -->
+<div style="display:none;">
+<img src="https://www.datastreamserver.com/_ed/images/display_on_showroom.gif" style="width:100%;"/>
+</div>
+<!-- END DISPLAY SHOWROOM -->
+
+<!-Sale banner start -->
+<style>
+.christmas-delivery-desktop, .delivery-dates-desktop{
+display:block;
+margin: 20px 0 10px 0;
+}
+
+.christmas-delivery-mobile, .delivery-dates-mobile{
+display:none;
+}
+
+@media screen and (max-width:640px) {
+.christmas-delivery-mobile, .delivery-dates-mobile{
+display:block;
+margin-top:10px;
+}
+.christmas-delivery-desktop, .delivery-dates-desktop{
+display:none;
+}
+}
+</style>
+
+<!-- <div class="christmas-delivery-desktop">
+		<a href="https://www.ebaystores.com.au/edisons"><img src="https://www.datastreamserver.com/_ed/images/desktop-edisons-banner.gif" style="width:100%;"/>
+</a></div>
+<div class="christmas-delivery-mobile">
+		<a href="https://www.ebaystores.com.au/edisons"><img src="https://www.datastreamserver.com/_ed/images/mobile-both-banner.jpg" style="width:100%;"/>
+</a></div> -->
+
+<!-- <div class="delivery-dates-desktop">
+<img src="https://www.datastreamserver.com/_ed/images/2021_desktop-christmas-delivery_auspost.jpg" style="width:100%;"/>
+</div>
+<div class="delivery-dates-mobile">
+<img src="https://www.datastreamserver.com/_ed/images/2021_mobile_AusPost.jpg" style="width:100%;"/>
+</div> -->
+<!-Sale banner end-->
+
+<div id="hero-banner">
+    <img class="desktop" src="https://www.datastreamserver.com/edisons/SKU/CHNSAWBMRA7X5/feature.jpg">
+    <img class="mobile" src="https://www.datastreamserver.com/edisons/SKU/CHNSAWBMRA7X5/feature_small.jpg">
+    
+    
+</div>
+
+
+<style>
+
+#hero-banner .mobile {
+    padding-bottom: 0px;
+}
+.video-desktop {
+    padding: 0px 0px 10px 0px !important;
+}
+.img_container {
+    padding: 3px 0px 3px 0px !important;
+}
+ .video-mobile {
+    margin: -7px 0px -7px 0px !important;
+}
+.desktop-device, .mobile-device{
+ display:none;
+}
+ .desktop-device,.mobile-device{
+   padding: 10px 0px 10px 0px !important;
+ }
+ /*desktop*/
+ @media all and  (min-width: 768px) {
+   .mobile-device{
+     display:none;
+   }
+   .desktop-device{
+     display:block;
+   }
+    #pre-order-container-inner {
+        margin: 20px 0px 20px 0px !important;
+    }
+    #features .container {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .container-clearance-sale{
+        padding: 10px 0px 10px 0px !important;
+    }
+    #delivery_methodsfree ul li:nth-child(1) {
+    background: url(https://www.datastreamserver.com/_ed/images/icon_05.gif) no-repeat left 1px !important;
+    }
+ }
+ /*mobile*/
+ @media all and  (max-width: 767px) {
+   .mobile-device{
+     display:block;
+   }
+   #hero-banner video{
+    margin-bottom: -7px !important;
+   }
+   .desktop-device{
+     display:none;
+   }
+    #pre-order-container-inner {
+        margin: 7px 0px 13px 0px !important;
+    }
+
+    .container-clearance-sale{
+        padding: 3px 0px 3px 0px !important;
+    }
+    #delivery_methodsfree ul li:nth-child(1) {
+    background: url(https://www.datastreamserver.com/_ed/images/icon_05.gif) no-repeat left 216px !important;
+    }
+ #features .container{
+    margin:0;
+ }
+</style>
+
+
+<div id="mobile-img-container" class="mobile-device">
+    
+    
+    
+    
+      
+     
+       
+        
+    
+    
+    
+      
+        
+    
+               
+    
+    
+    
+</div>
+
+<!-- DISPLAY SHOWROOM BANNER 1 -->
+<!-- DISPLAY SHOWROOM BANNER 1 -->
+
+<!-- DISPLAY SHOWROOM BANNER 2 -->
+<!-- DISPLAY SHOWROOM BANNER 2 -->
+
+<style>
+.mega-clearance {
+padding-bottom:0px;
+}
+</style>
+<!--Features - Start -->
+<div class="featuring">
+<div id="features">
+            <div id="features1">
+            <div class="container">
+                
+                
+                <div class="img_container desktop-device"><img src="https://www.agrmachinery.com.au/assets/alt_1/CHNSAWBMRA7X5.jpg?20210211153637"/></div>
+                <div class="img_container desktop-device"><img src="https://www.agrmachinery.com.au/assets/alt_2/CHNSAWBMRA7X5.jpg?20210211153441"/></div>  
+                <div class="img_container desktop-device"><img src="https://www.agrmachinery.com.au/assets/alt_3/CHNSAWBMRA7X5.jpg?20210211153441"/></div> 
+                <div class="img_container desktop-device"><img src="https://www.agrmachinery.com.au/assets/alt_4/CHNSAWBMRA7X5.jpg?20210211153441"/></div>   
+                <div class="img_container desktop-device"><img src="https://www.agrmachinery.com.au/assets/alt_5/CHNSAWBMRA7X5.jpg?20211222170118"/></div>    
+                <div class="img_container desktop-device"><img src="https://www.agrmachinery.com.au/assets/alt_6/CHNSAWBMRA7X5.jpg?20210211153441"/></div>
+                <div class="img_container desktop-device"><img src="https://www.agrmachinery.com.au/assets/alt_7/CHNSAWBMRA7X5.jpg?20210211153441"/></div>
+                <div class="img_container desktop-device"><img src="https://www.agrmachinery.com.au/assets/alt_8/CHNSAWBMRA7X5.jpg?20210211153441"/></div>
+                <div class="img_container desktop-device"><img src="https://www.agrmachinery.com.au/assets/alt_9/CHNSAWBMRA7X5.jpg?20210211153441"/></div>  
+                    
+                
+                           
+                
+                
+                
+                <div class="img_container desktop-device"><img src="https://www.agrmachinery.com.au/assets/alt_16/CHNSAWBMRA7X5.jpg?20210211153441"/></div>
+                
+</div>
+            </div>
+</div>
+            </div>
+
+<!--Features - End-->
+
+
+<div class="spec-img">
+    
+    
+</div>
+
+<!--More Info - Start-->
+<div class="moreinfocontainer">
+<div class="item_desc">Product INFORMATION</div>
+<div id="more_info"><p>From pruning hedges and cutting firewood, to taking down whole trees, the <strong>Baumr-AG SX75 Pro-Series 22" chainsaw</strong> has all the raw grunt and features you need to take on any job. Firing up the massively powerful direct injection carburettor takes minimum effort thanks to its <strong>patented 'Easy Start System'</strong>. Once you're up and running the <strong>'A-VIBE' anti-vibration feature, superior oil feed, premium saw chain and lightning fast safety brake</strong> allow for smooth performance and superior manoeuvrability.</p>
+
+<p>With the massive grunt of a <strong>patented air injection carburettor </strong>combining with unparalleled levels of quality, the <strong>Baumr-AG Pro-Series 22" </strong>is the perfect choice for those who demand serious commercial grade performance. The premium air filter has increased surface area to maximise performance. It is covered by a pre-filter to help keep the carburettor clean at all times.</p>
+
+<p>Designed for low fatigue, easy use and manoeuvrability, your Baumr-AG comes loaded with great features including an<strong> elastomer grab bar for smooth 360° cutting, easy to service access to the engine, filter and spark plug, plus Baumr-AG's patented Easy Start System.</strong> This system works by pairing two opposing memory retaining spring coils. As you pull the starter cord a second coil builds energy and releases that energy all at once. This means anyone can start this beast, first time, every time.</p>
+
+<p>The&nbsp;<strong>BONUS premium bar cover&nbsp;</strong>offers protection to both the saw and user during transport and storage. The&nbsp;other included extras help with assembly and ongoing maintenance, but also keep you safe during operation.&nbsp;Make no mistake, this unit delivers unparalleled and enduring quality performance. Invest in the best and get one of Australia's hottest selling chainsaws in your hands. Order your&nbsp;<strong>Baumr-AG SX75 22" Pro-Series Chainsaw today!</strong></p>
+
+<ul>
+	<li><strong>Genuine Baumr-AG&nbsp;</strong></li>
+	<li><strong>Balanced design for ease of use and manoeuvrability</strong></li>
+	<li><strong>HUGE POWER - direct air injection carburettor</strong></li>
+	<li><strong>Easy service access to engine, filters and spark plug</strong></li>
+	<li><strong>Patented Easy Starting System&nbsp;</strong></li>
+	<li><strong>Quick tension chain mechanism, integrated chain brake</strong></li>
+	<li><strong>Patented 'A-VIBE' anti-vibration system</strong></li>
+	<li><strong>Easy access chain oil tank</strong></li>
+	<li><strong>Premium air filter for continual peak performance</strong></li>
+	<li><strong>Additional pre-filter helps keep the carburettor clean&nbsp;</strong></li>
+	<li><b>Bar cover included</b></li>
+	<li><strong>Exceeds AS/NZS safety standards</strong></li>
+</ul>
+</div>
+</div>
+<!--More Info - End-->  
+
+<!-- Buy it now -->
+<style>
+/*#buy_it_now_section{
+margin-top: 15px;
+text-align:center;
+ display:none;
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+#buy_it_now_section{
+display:block !important;
+}
+}*/
+</style>
+<!-- 
+<div id="buy_it_now_section">
+<img src="https://datastreamserver.com/_ed/images/buy_it_now_promo.png"/>
+<a href="https://cart.payments.ebay.com.au/sc/add?item=140744556841" target="_blank">
+<img src="https://datastreamserver.com/_ed/images/buy_it_now_button.png"/>
+</a>
+
+<a href="http://54.66.215.6/price_optimization/public/test?item_id=140744556841" target="_blank"><img src="https://datastreamserver.com/_ed/images/buy_it_now_button.png"/></a>
+</div> -->
+<!-- Buy it now end -->
+
+<!--Specifications - Start-->
+<div class="item_desc">specifications</div>
+            <div id="specification">
+                <div class="specification_left">
+                    <ul>
+	<li><strong>Brand:</strong> Baumr-AG</li>
+	<li><strong>Model: </strong>SX75</li>
+	<li><strong>Displacement: </strong>62cc</li>
+	<li><strong>Engine Type: </strong>Petrol 2 Stroke Commercial</li>
+	<li><strong>Max Cutting Length:</strong> 610mm</li>
+	<li><strong>Maximum Power:</strong> 5.2Hp (peak)</li>
+	<li><strong>Fuel Tank Capacity: </strong>550mL</li>
+	<li><strong>Fuel Type:</strong> Regular Unleaded 95+ RON</li>
+	<li><strong>Fuel Mix: </strong>25:1 (25 parts fuel to 1 part two stroke oil)</li>
+	<li><strong>Bar Length:</strong> 22”</li>
+	<li><strong>Bar Type:</strong> Sprocket Nose</li>
+	<li><strong>Bar Oil Capacity: </strong>260mL</li>
+	<li><strong>Bar Oil Type: </strong>SAE#10W-30 or Similar</li>
+	<li><strong>Chain Type: </strong>Low Kickback Premium Semi-Chisel</li>
+	<li><strong>Chain Spec:</strong> 22”, Pitch 0.325, Gauge 0.058, Links 86</li>
+	<li><strong>Oil Lubrication System: </strong>Adjustable Automatic Pump</li>
+	<li><em><strong>Note:</strong></em> Som<em>e Assembly required</em></li>
+</ul>
+<ul style="margin-top:0px; padding-top:0px;">
+                        <li><strong>SKU:</strong> CHNSAWBMRA7X5</li>
+                    </ul>
+                </div>
+                <div class="specification_right">
+                    <h2><br />
+IN THE BOX</h2>
+
+<ul>
+	<li><strong>1 x </strong>Baumr-AG SX75&nbsp;Pro-Series Chainsaw</li>
+	<li><strong>1 x&nbsp;</strong>Bar cover</li>
+	<li><strong>1 x</strong> Multi-Tool</li>
+	<li><strong>1 x</strong> Chain Sharpener</li>
+	<li><strong>1 x</strong> Fuel Mixer</li>
+	<li><strong>1 x</strong> Gloves</li>
+	<li><strong>1 x </strong>Ear Muffs</li>
+	<li><strong>1 x </strong>Goggles</li>
+	<li>User Manual is accessible online</li>
+</ul>
+
+<h2>SIZE &amp; WEIGHT</h2>
+
+<ul>
+	<li><strong>Carton Weight: </strong>9.5kg</li>
+	<li><strong>Carton Dimensions (L x W x H):</strong> 62 x 29 x 33cm</li>
+	<li><strong>Product Weight: </strong>7kg</li>
+	<li><strong>Product Dimensions (L x W x H):</strong> 98 x 24 x 28cm&nbsp;</li>
+</ul>
+                </div>
+            </div>
+<!--Specifications - End--> 
+
+
+
+
+
+
+
+<!--<div class="whyshopcontainer">
+    <div class="item_desc whyshop">Why shop with us?</div>
+        <div class="whyshop">
+            <div id="banner2" style="display:none"><a href="https://stores.ebay.com.au/AGR-Machinery-Pro-Equipment-Store" target="_blank"><img src="https://www.datastreamserver.com/dzinehub/dzinehub-1149/listing/images/banner2-desk.jpg" alt="" /></a></div>
+            <div id="feedback">
+                <div class="feedback1"><img src="https://www.datastreamserver.com/_ed/images/feedback1.png" alt=""  /></div>
+                <div class="feedback2"><img src="https://www.datastreamserver.com/_ed/images/feedback2.jpg" alt="" /></div>
+                <div class="feedback2_mobile"><img src="https://www.datastreamserver.com/_ed/images/feedback2_mobile.jpg" alt="" /></div>
+                <div class="feedback3"><img src="https://www.datastreamserver.com/_ed/images/feedback3.png" alt=""  /></div>
+            </div>
+        </div>
+    </div>-->
+<style>
+#feedback > .mobile {
+    display: none;
+    margin-bottom: 0;
+}
+#feedback > .mobile > img {
+    margin-bottom: 20px !important;
+}
+
+@media (max-width: 640px){
+    #feedback {
+        padding-bottom: 0px;
+    }
+    #feedback > .mobile {
+        display: block;
+    }
+    #feedback > .desktop {
+        display: none;
+    }
+}
+</style>
+
+<div class="whyshopcontainer">
+    <div class="item_desc whyshop">Why shop with us?</div>
+    <div class="whyshop">
+        <div id="banner2" style="display:none"><a href="https://stores.ebay.com.au/AGR-Machinery-Pro-Equipment-Store" target="_blank"><img src="https://www.datastreamserver.com/dzinehub/dzinehub-1149/listing/images/banner2-desk.jpg" alt="" /></a></div>
+        <div id="feedback">
+
+            <div class="desktop"><img src="https://www.datastreamserver.com/_ed/images/why-shop.jpg" alt=""  /></div>
+            <div class="mobile">
+                <img src="https://www.datastreamserver.com/_ed/images/feedback1_2.jpg" alt=""  />
+                <img src="https://www.datastreamserver.com/_ed/images/feedback2_2.jpg" alt="" />
+                <img src="https://www.datastreamserver.com/_ed/images/feedback3_2.jpg" alt=""  />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--<div class="item_desc">DELIVERY INFORMATION</div>
+
+
+<style>
+    .delivery_right ol li {
+        margin-bottom: 10px !important;
+        min-height: 1em !important;
+    }
+
+.pick-opt {
+    background: none !important;
+    padding: 0 !important;
+    margin-top: 30px !important;
+}
+
+.pick-opt > li, .delivery_right ul li:nth-child(1),.delivery_right ul li:nth-child(2) {
+    margin:5px 0px 5px 20px !important;
+    padding: 0 !important;
+    background: none !important;
+    list-style-type: disc !important;
+}
+
+.pick-up-option {
+    background:none;
+    height:inherit;
+}
+</style>
+<div id="delivery_methodsfree">
+
+    <div class="delivery_left">
+        <div class="blue"><img src="https://www.datastreamserver.com/_ed/images/xpfree.jpg">
+        </div>
+        <div class="linkbox_mobile">
+
+
+            <div class="postageaus_img"><img src="https://www.datastreamserver.com/_ed/images/xpfree_mobile.jpg">
+            </div>
+        </div>
+        <ul>
+            <li>Your item will be shipped to you via Australia Post as a Registered Post package. This requires a signature for collection.</li>
+
+            <li>Please note that if your area is only covered by a Post Office Drop, or if you are unavailable at the time of delivery, a card will be left in your mailbox to enable collection at your local Post Office.</li>
+        </ul>
+        <p>98% of products are dispatched within 1 business day. Ensure your address is correct during checkout. To aid in speed of delivery, our system cannot accept order cancellations following payment. Allow 5-10 business days for delivery.</p>
+<p><strong>*</strong>Your eBay registered postcode determines your shipping rate. This rate is displayed near the sale price when you are logged into your account. It displays as either as <strong>Free</strong> or a <strong>$</strong> figure.<p>
+    </div>
+    <div class="delivery_right">
+
+
+<div class="desc grey">
+    <img src="https://www.datastreamserver.com/_ed/images/pickup_option.jpg">
+</div>
+<p>Prearrangements are essential. Collection is available from our NSW warehouses at Seven Hills and Penrith. Mon-Fri 9am-3pm (excl. public holidays).  Pick up location may vary depending on the availability of the stocks. Payment must be made prior to arrival. No products are on display.</p>
+<p><strong>PICKUP PROCESS</strong></p>
+<ol>
+    <li>Proceed through eBay checkout and click 'Pay now' (but do not finalise payment). This will forward all your details.</li>
+    <li>Contact us via eBay messages [Mon-Fri 11am-7pm] to confirm stock availability and pick up location.</li>
+    <li>Note: Warehouse hours are Mon-Fri 9am-3pm (excl. public holidays).</li>
+</ol>
+</div>
+</div>-->
+<style>
+    .delivery_right ol li {
+        margin-bottom: 10px !important;
+        min-height: 1em !important;
+    }
+
+.pick-opt {
+    background: none !important;
+    padding: 0 !important;
+    margin-top: 30px !important;
+}
+
+.pick-opt > li, .delivery_right ul li:nth-child(1),.delivery_right ul li:nth-child(2) {
+    margin:5px 0px 5px 20px !important;
+    padding: 0 !important;
+    background: none !important;
+    list-style-type: disc !important;
+}
+
+.pick-up-option {
+    background:none;
+    height:inherit;
+}
+#delivery_methodsfree ul li:nth-child(2) {
+    background: url(https://www.datastreamserver.com/_ed/images/icon_07.gif) no-repeat left 1px;
+}
+#delivery_methodsfree ul li:nth-child(3) {
+    background: url(https://www.datastreamserver.com/_ed/images/icon_05_2.png) no-repeat -5px -3px;
+}
+#delivery_methodsfree ul li:nth-child(4) {
+   background: url(https://www.datastreamserver.com/_ed/images/disclaimer.png) no-repeat -5px -3px;
+}
+</style>
+<div class="item_desc">DELIVERY INFORMATION</div>
+<div id="delivery_methodsfree">
+
+    <div class="delivery_left">
+        <div class="blue"><img src="https://www.datastreamserver.com/_ed/images/xpfree.jpg">
+        </div>
+        <div class="linkbox_mobile">
+            <div class="postageaus_img"><img src="https://www.datastreamserver.com/_ed/images/xpfree_mobile.jpg">
+            </div>
+        </div>
+        <ul>
+            <li>Your item will be shipped to you via Australia Post as a Registered Post package. This requires a signature for collection.</li>
+            <li>Please note that if your area is only covered by a Post Office Drop, or if you are unavailable at the time of delivery, a card will be left in your mailbox to enable collection at your local Post Office.</li>
+            <li>We process orders fast with 98% of items dispatched within 1 business day. Please ensure your address is correct during checkout. To aid in speed of delivery, our system cannot accept order cancellations following payment. Allow 5-10 business days for delivery.</li>
+        <li>We may not be able to deliver to a very few remote areas. Either use a different delivery address or choose the pick up option. See <a href="https://www.ebaystores.com.au/edisons/Delivery.html" target="_blank">restricted post codes</a></li>
+</ul>
+<p><strong>*</strong>Your eBay registered postcode determines your shipping rate. This rate is displayed near the sale price when you are logged into your account. It displays as either as <strong>Free</strong> or a <strong>$</strong> figure.<p>
+    </div>
+    <div class="delivery_right">
+<div class="desc grey">
+    <img src="https://www.datastreamserver.com/_ed/images/pickup_option.jpg">
+</div>
+<p>Prearrangements are essential. Collection is available from our NSW warehouses at Seven Hills and Penrith. Mon-Fri 9am-3pm (excl. public holidays).  Pick up location may vary depending on the availability of the stocks. Payment must be made prior to arrival. No products are on display.</p>
+<p><strong>PICKUP PROCESS</strong></p>
+<ol>
+    <li>Proceed through eBay checkout and click 'Pay now' (but do not finalise payment). This will forward all your details.</li>
+    <li>Contact us via eBay messages [Mon-Fri 11am-7pm] to confirm stock availability and pick up location.</li>
+    <li>Note: Warehouse hours are Mon-Fri 9am-3pm (excl. public holidays).</li>
+</ol>
+</div>
+</div>
+
+
+
+
+</div>
+<style type="text/css">#footer > * a {
+        text-decoration:none;
+    }
+    #footer .item_desc, #footer .item_desc1, #footer .item_desc2, #footer .item_desc3{
+        font-size: 17px;
+        font-weight: normal;
+        padding: 4px 0px 0px 35px;
+    }
+    #footer .block1{
+        padding: 35px 0 25px 0;
+    }
+    #footer .block1 > * img{
+        height: 152px;
+    }
+    #footer .block2 .footer_img{
+        overflow: hidden;
+        height: 177px;
+        margin: 5% 0;
+    }
+    #footer .block2 .footer_img img{
+        transform: translatey(-38%);
+    }
+    .meet_the_team{
+        width: 33% !important;
+    }
+    .location{
+        width: 34%;
+        float:left;
+        padding:0px 20px 0px 20px;;
+    }
+    .sydney_showroom{
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 20px;
+        vertical-align: top;
+        display: block;
+        width: 33%;
+        box-sizing: border-box;
+        float: left;
+        overflow: hidden;
+    }
+    .sydney_showroom img{
+        margin: 5% 0%;
+        width: 100%;
+    }
+@media screen and (max-width: 640px){
+    .meet_the_team, .sydney_showroom {
+        border-bottom: 1px solid #333333;
+        padding: 20px 0px !important;
+        width: 100% !important;
+    }
+    .block1, .block2 {
+        padding: 0px 20px !important;
+    }
+    #footer .block1 > * img{
+        height: auto;
+    }
+    #footer .block2 .footer_img{
+        overflow: initial;
+        height: auto;
+        margin: 0; 
+    }
+    #footer .block2 .footer_img img{
+        transform: initial;
+    }
+
+}
+</style>
+<div id="footer">
+<div class="footer_top"><strong>ABOUT US</strong></div>
+
+<div id="footer_inner">
+<div class="block1">
+<div class="left">
+<div class="item_desc1">MEET THE TEAM</div>
+
+<div class="footer_img"><img alt="" src="https://www.datastreamserver.com/_ed/images/ed_meet_the_team.jpg" /></div>
+
+<p>We're the Aussie underdogs taking on the big retailers. Since 2006 we have helped over 500,000 Aussies save hundreds of dollars on home, garden and outdoor machinery products by cutting out the expensive middlemen and going directly to the manufacturer.</p>
+
+<p><a href="https://www.datastreamserver.com/_ed/xhtml/eBay_Edisons_About_Us_Code_03082022.html" target="_blank">More Info...</a></p>
+</div>
+
+<div class="right">
+<div class="item_desc1">LOCATION</div>
+
+<div class="footer_img"><img alt="" src="https://www.datastreamserver.com/_ed/images/ed_location.jpg" /></div>
+
+<p>Bookings are required when taking advantage of our Pick-Up option. Payment must be made prior to arrival. No products are on display. We cannot guarantee same day pick up. Pick-Up process is outlined above.</p>
+</div>
+<!--<div class="sydney_showroom" style="d">
+                <div class="item_desc1">SYDNEY SHOWROOM</div>
+                <div class="footer_img"><img alt="" src="https://www.datastreamserver.com/_ed/images/ed_sydney_showroom.jpg" /></div>
+                <p>We have a Showroom with selected products on display. Get a closer look at some of our quality products that are a fraction of the cost you would expect to pay elsewhere.</p>
+                <p><a href="https://stores.ebay.com.au/edisons/sydney-showroom.html" target="_blank">More Info...</a></p>
+            </div>--></div>
+
+<div class="block2">
+<div class="left">
+<div class="item_desc2">EXPERT SERVICE TECHNICIANS</div>
+
+<div class="footer_img"><img alt="" src="https://www.datastreamserver.com/_ed/images/expert.jpg" /></div>
+
+<p>Our expert service technicians are here to help following your purchase.</p>
+</div>
+
+<div class="right">
+<div class="item_desc2">COMPREHENSIVE PARTS SUPPORT</div>
+
+<div class="footer_img"><img alt="" src="https://www.datastreamserver.com/_ed/images/support.jpg" /></div>
+
+<p>With our comprehensive parts support, we help to keep your unit humming.</p>
+</div>
+</div>
+
+<div class="block1 last">
+<div class="block-container">
+<div class="block_f1">
+<div class="item_desc1">SHOP POLICY</div>
+
+<p>At Edisons, we focus our efforts on ensuring we save customers hundreds and even thousands of dollars on home, garden and outdoor machinery products which have traditionally costed Aussies far too much. If you have any questions or concerns, you can be rest assured that our After-Sales team are here to help!</p>
+
+<p><a href="https://www.datastreamserver.com/_ed/xhtml/eBay_Edisons_Store_Policy_Services_Page_Current_Code_03082022.html" target="_blank">More Info...</a></p>
+</div>
+
+<div class="block_f2">
+<div class="item_desc1">WARRANTY</div>
+
+<p>Edisons offer a 12 month warranty on all products used for private household use from the date of purchase (unless noted otherwise). The use of products for commercial purposes qualifies the purchaser to a 3 month warranty period. Consumable components and accessories are not covered once used or for damage caused by general wear and tear.</p>
+
+<div class="footer_img">&nbsp;</div>
+
+<p><a href="https://www.datastreamserver.com/_ed/xhtml/eBay_Edisons_Store_Policy_Services_Page_Current_Code_03082022.html" target="_blank">More Info...</a></p>
+</div>
+
+<div class="block_f3">
+<div class="item_desc1">30 DAY RETURNS</div>
+
+<p>If you've changed your mind or purchased in error you may be entitled to return the product for a partial refund. We must be notified within 30 days of you receiving the item, and it must be returned in original unused re-saleable condition with all tags and packaging in the following 14 days.</p>
+
+<div class="footer_img">&nbsp;</div>
+
+<p><a href="https://www.datastreamserver.com/_ed/xhtml/eBay_Edisons_Store_Policy_Services_Page_Current_Code_03082022.html" target="_blank">More Info...</a></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer_bot" id="ask_us"><a href="https://contact.ebay.com.au/ws/eBayISAPI.dll?FindAnswers&amp;redirect=0&amp;iid=140744556841&amp;requested=edisons" target="_blank"><img src="https://www.datastreamserver.com/_ed/images/any_questions_footer.png" /></a></div>
+</div>
+
+<div id="footer_bottom">
+<div id="footer_bottom_inner">
+<div class="footer_left">
+<div><img alt="" src="https://www.datastreamserver.com/_ed/images/logo_footer.jpg" /></div>
+
+<div class="footer_favesell"><a href="https://my.ebay.com.au/ws/eBayISAPI.dll?AcceptSavedSeller&amp;linkname=includefavoritestore&amp;sellerid=edisons" target="_blank"><img alt="" src="https://www.datastreamserver.com/_ed/images/addtofavorite.jpg" /></a></div>
+</div>
+
+<div class="footer_right">
+<div class="newsletter_footer"><img alt="" src="https://www.datastreamserver.com/_ed/images/contact_us_footer.png" /></div>
+&nbsp;
+
+<div class="payment_method_label">Payment methods available</div>
+
+<div><img alt="Paypal" src="https://www.datastreamserver.com/_ed/images/paypal.png" /><img alt="Visa" src="https://www.datastreamserver.com/_ed/images/visa.png" /><img alt="Mastercard" src="https://www.datastreamserver.com/_ed/images/mastercard.png" /></div>
+
+<div class="copyrights"><strong>Copyright © 2021 Edisons. All Rights Reserved.</strong></div>
+</div>
+</div>
+</div>
+</div>
+</div>
